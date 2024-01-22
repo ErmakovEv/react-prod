@@ -1,12 +1,13 @@
 import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'app/providers/theme';
-import ErrorBoundary from 'untitled/src/ErrorBoundary';
+import { ErrorPage } from 'shared/ui/ErrorPage';
+import { ErrorBoundary } from 'react-error-boundary';
 import App from './app/App';
 
 import 'shared/config/i18n/i18n';
 
 createRoot(document.getElementById('root')).render(
-  <ErrorBoundary>
+  <ErrorBoundary fallback={<ErrorPage />}>
     <ThemeProvider>
       <App />
     </ThemeProvider>

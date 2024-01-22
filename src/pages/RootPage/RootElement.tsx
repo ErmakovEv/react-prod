@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/SidebarBlock';
@@ -7,7 +7,7 @@ import classes from './RootElement.module.scss';
 
 function RootElement() {
   return (
-    <Suspense>
+    <>
       <Navbar />
       <div className={classNames({ cls: classes.RootElement })}>
         <Sidebar />
@@ -15,7 +15,8 @@ function RootElement() {
           <Outlet />
         </div>
       </div>
-    </Suspense>
+    </>
+
   );
 }
 

@@ -25,6 +25,5 @@ export function ThemeSwitch({ className } : ThemeSwitchProps) {
       {theme === Theme.DARK ? <LightIcon className={classes.icon} />
         : <DarkIcon className={classes.icon} />}
     </Button>
-
   );
 }

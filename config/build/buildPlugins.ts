@@ -2,6 +2,8 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 import { BuildOptions } from './types/config';
 
 export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
@@ -18,5 +20,8 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
       DEV: JSON.stringify(isDev),
     }),
     refreshPlugin,
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false,
+    }),
   ];
 }

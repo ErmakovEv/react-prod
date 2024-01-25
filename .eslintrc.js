@@ -35,7 +35,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
   ],
-  ignorePatterns: ['node_modules/'],
+  ignorePatterns: ['node_modules/', 'coverage/'],
   rules: {
     'react/react-in-jsx-scope': 0,
     'import/prefer-default-export': 'off',

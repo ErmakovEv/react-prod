@@ -9,7 +9,9 @@
     "build:dev": "webpack --env mode=development",
     "lint:ts": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "lint:scss": "npx stylelint \"**/*.scss\" --fix",
-    "unit": "jest --config  config/jest/jest.config.ts"
+    "unit": "jest --config  config/jest/jest.config.ts",
+    "storybook": "storybook dev -p 6006 -c ./config/storybook",
+    "build-storybook": "storybook build ./config/storybook"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,15 @@
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/addon-styling-webpack": "^0.0.6",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-webpack5": "^7.6.10",
+    "@storybook/test": "^7.6.10",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.1.2",
@@ -44,15 +55,18 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-storybook": "^0.6.15",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "loki": "^0.34.0",
     "mini-css-extract-plugin": "^2.7.6",
     "react-refresh": "^0.14.0",
     "sass": "^1.69.7",
     "sass-loader": "^13.3.3",
+    "storybook": "^7.6.10",
     "style-loader": "^3.3.3",
     "stylelint": "^14.5.3",
     "stylelint-config-standard-scss": "^3.0.0",
@@ -65,6 +79,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@etchteam/storybook-addon-css-variables-theme": "^2.0.6",
     "eslint-config-airbnb": "^19.0.4",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",
@@ -74,5 +89,20 @@
     "react-error-boundary": "^4.0.12",
     "react-i18next": "^14.0.0",
     "react-router-dom": "^6.21.1"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }

@@ -8,6 +8,9 @@ import { BuildOptions } from './types/config';
 
 export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
   const refreshPlugin = isDev ? new webpack.HotModuleReplacementPlugin() : undefined;
+  const bundleAnalyzerPlugin = isDev ? new BundleAnalyzerPlugin({
+    openAnalyzer: false,
+  }) : undefined;
 
   return [
     new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
@@ -20,8 +23,6 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
       DEV: JSON.stringify(isDev),
     }),
     refreshPlugin,
-    new BundleAnalyzerPlugin({
-      openAnalyzer: false,
-    }),
+    bundleAnalyzerPlugin,
   ];
 }

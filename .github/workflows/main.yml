@@ -16,8 +16,9 @@ jobs:
           ref: 'master'
       - name: Starting Node.js
         uses: action/setup-node
-#        with:
-#          node-version: ${{matrix.node-version}}
+        with:
+          node-version: ${{matrix.node-version}}
+          ref: 'master'
 #      - name: install modules
 #        run: npm install
 #      - name: build project

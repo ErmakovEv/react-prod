@@ -6,19 +6,17 @@ on:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-#    strategy:
-#      matrix:
-#        node-version: [17.x]
+    strategy:
+      matrix:
+        node-version: [17.x]
     steps:
-      - uses: action/checkout@v4
+      - uses: action/checkout@v2
+      - name: Starting Node.js ${{matrix.node-version}}
+        uses: action/setup-node@v1
         with:
-        repository: ''
-#      - name: Starting Node.js ${{matrix.node-version}}
-#        uses: action/setup-node@v1
-#        with:
-#          node-version: ${{matrix.node-version}}
-#      - name: install modules
-#        run: npm install
+          node-version: ${{matrix.node-version}}
+      - name: install modules
+        run: npm install
 #      - name: build project
 #        run: npm run build:prod
 #      - name: linting typescript

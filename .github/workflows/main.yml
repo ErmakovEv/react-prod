@@ -1,5 +1,6 @@
 name: Linting, Testing, Building
-#run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+permissions:
+  contents: read
 on:
   push:
     branches: [master]

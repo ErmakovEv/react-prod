@@ -15,7 +15,7 @@ jobs:
         node-version: [17.x]
 
     steps:
-      - uses: action/checkout
+      - uses: action/checkout@v4
       - name: Starting Node.js ${{matrix.node-version}}
         uses: action/setup-node@v1
         with:

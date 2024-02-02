@@ -9,21 +9,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Starting Node.js ${{matrix.node-version}}
+        uses: action/setup-node@v1
         with:
-          ref: 'master'
-#      - name: Starting Node.js ${{matrix.node-version}}
-#        uses: action/setup-node@v1
-#        with:
-#          node-version: ${{matrix.node-version}}
-#      - name: install modules
-#        run: npm install
-#      - name: build project
-#        run: npm run build:prod
-#      - name: linting typescript
-#        run: npm run lint:ts
-#      - name: linting scss
-#        run: npm run lint:scss
-#      - name: testing unit
-#        run: npm run test:unit
-#      - name: testing ui
-#        run: npm run test:ui
+          node-version: ${{matrix.node-version}}
+      - name: install modules
+        run: npm install
+      - name: build project
+        run: npm run build:prod
+      - name: linting typescript
+        run: npm run lint:ts
+      - name: linting scss
+        run: npm run lint:scss
+      - name: testing unit
+        run: npm run test:unit
+      - name: testing ui
+        run: npm run test:ui

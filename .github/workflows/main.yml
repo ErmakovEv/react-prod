@@ -1,18 +1,16 @@
 name: CI
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on:
-  push:
-    branches: [master]
-
+on: [push]
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-#    strategy:
-#      matrix:
-#        node-version: [17.x]
-
+    strategy:
+      matrix:
+        node-version: [17.x]
     steps:
-      - uses: action/checkout@v3
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+#    steps:
+#      - uses: action/checkout@v3
 #      - name: Starting Node.js ${{matrix.node-version}}
 #        uses: action/setup-node@v1
 #        with:

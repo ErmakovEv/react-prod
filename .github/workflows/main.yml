@@ -17,21 +17,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-#      - name: Starting Node.js
-#        uses: action/setup-node
-#        with:
-#          node-version: ${{matrix.node-version}}
-#          ref: 'master'
-
-#      - name: install modules
-#        run: npm install
-#      - name: build project
-#        run: npm run build:prod
-#      - name: linting typescript
-#        run: npm run lint:ts
-#      - name: linting scss
-#        run: npm run lint:scss
-#      - name: testing unit
-#        run: npm run test:unit
-#      - name: testing ui
-#        run: npm run test:ui
+      - name: install modules
+        run: npm install
+      - name: build project
+        run: npm run build:prod
+      - name: linting typescript
+        run: npm run lint:ts
+      - name: linting scss
+        run: npm run lint:scss
+      - name: testing unit
+        run: npm run test:unit
+      - name: testing ui
+        run: npm run test:ui

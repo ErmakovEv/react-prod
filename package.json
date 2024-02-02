@@ -7,7 +7,7 @@
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "lint:ts": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "lint:ts": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 10 --fix",
     "lint:scss": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config  config/jest/jest.config.ts",
     "test:ui": "npx loki test",

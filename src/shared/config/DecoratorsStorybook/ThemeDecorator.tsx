@@ -5,12 +5,13 @@ import { Theme, ThemeProvider } from 'app/providers/theme';
 // import './index.scss';
 
 interface TestDecoratorProps {
-  children: React.ReactNode
+  children: React.ReactNode,
+  theme: Theme
 }
-function ThemeDecorator({ children } : TestDecoratorProps) {
+function ThemeDecorator({ children, theme } : TestDecoratorProps) {
   return (
     <ThemeProvider>
-      <div className={`app ${Theme.DARK}`}>
+      <div className={`app ${theme}`}>
         {children}
       </div>
     </ThemeProvider>

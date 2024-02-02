@@ -9,9 +9,11 @@
     "build:dev": "webpack --env mode=development",
     "lint:ts": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "lint:scss": "npx stylelint \"**/*.scss\" --fix",
-    "unit": "jest --config  config/jest/jest.config.ts",
+    "test:unit": "jest --config  config/jest/jest.config.ts",
+    "test:ui": "npx loki test",
+    "test:ui:ok": "npx loki approve",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build ./config/storybook"
+    "storybook:build": "storybook build ./config/storybook"
   },
   "keywords": [],
   "author": "",
@@ -67,6 +69,7 @@
     "sass": "^1.69.7",
     "sass-loader": "^13.3.3",
     "storybook": "^7.6.10",
+    "storybook-addon-react-router-v6": "^2.0.10",
     "style-loader": "^3.3.3",
     "stylelint": "^14.5.3",
     "stylelint-config-standard-scss": "^3.0.0",

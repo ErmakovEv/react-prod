@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: 'master'
-#      - name: Starting Node.js ${{matrix.node-version}}
-#        uses: action/setup-node@v1
-#        with:
-#          node-version: ${{matrix.node-version}}
+      - name: Starting Node.js ${{matrix.node-version}}
+        uses: action/setup-node@v1
+        with:
+          node-version: ${{matrix.node-version}}
 #      - name: install modules
 #        run: npm install
 #      - name: build project

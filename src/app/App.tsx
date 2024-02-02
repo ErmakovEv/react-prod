@@ -8,7 +8,6 @@ import { BugButton } from 'widgets/BugButton';
 function App() {
   const { theme } = useTheme();
   return (
-
     <div className={classNames({ cls: 'app', additional: [theme] })}>
       <BugButton className="clear" />
       <AppRouter />

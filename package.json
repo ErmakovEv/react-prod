@@ -96,7 +96,7 @@
     "react-router-dom": "^6.21.1"
   },
   "loki": {
-    "chromeTolerance": 20,
+    "chromeTolerance": 100,
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.app",

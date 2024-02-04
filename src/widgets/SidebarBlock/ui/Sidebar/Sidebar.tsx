@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import { ThemeSwitch } from 'shared/ui/ThemeSwitch/';
 import { LangSwitcher } from 'shared/ui/LangSwitcher';
 import { Button, ButtonTheme, ButtonSize } from 'shared/ui/Button/Button';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { Theme } from 'app/providers/theme';
+import { useTranslation } from 'react-i18next';
 import classes from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -10,7 +13,7 @@ interface SidebarProps {
 }
 export function Sidebar({ className } : SidebarProps) {
   const [collapsed, setCollapsed] = useState<boolean>(false);
-
+  const { t } = useTranslation();
   const onToggle = () => setCollapsed((newCollapsed) => !newCollapsed);
 
   return (
@@ -22,6 +25,21 @@ export function Sidebar({ className } : SidebarProps) {
       })}
       data-testid="sidebar"
     >
+      <div className={classes.items}>
+
+        <AppLink to="/" theme={Theme.LIGHT} className={classes.link}>
+          {' '}
+          {t('Главная')}
+          {' '}
+        </AppLink>
+
+        <AppLink to="/about" theme={Theme.LIGHT} className={classes.link}>
+          {' '}
+          {t('О сайте')}
+          {' '}
+        </AppLink>
+
+      </div>
       <Button
         data-testid="button-toggle"
         onClick={onToggle}

@@ -25,13 +25,6 @@ export function Navbar({ className } : NavbarProps) {
             {' '}
           </AppLink>
         </li>
-        <li>
-          <AppLink to="/about" theme={Theme.LIGHT}>
-            {' '}
-            {t('О сайте')}
-            {' '}
-          </AppLink>
-        </li>
       </ul>
     </div>
 

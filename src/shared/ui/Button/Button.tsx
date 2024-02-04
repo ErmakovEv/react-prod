@@ -8,13 +8,11 @@ export enum ButtonTheme {
   BACKGROUND = 'background',
   BACKGROUND_INVERTED = 'backgroundInverted',
 }
-
 export enum ButtonSize {
   XL = 'size_xl',
   L = 'size_l',
   M = 'size_m',
 }
-
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string,
   themeButton?: ButtonTheme,
@@ -36,6 +34,5 @@ export function Button({
     >
       {children}
     </button>
-
   );
 }

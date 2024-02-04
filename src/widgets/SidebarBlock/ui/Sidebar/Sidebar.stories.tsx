@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import ThemeDecorator from 'shared/config/DecoratorsStorybook/ThemeDecorator';
 import { Theme } from 'app/providers/theme';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { withRouter } from 'storybook-addon-react-router-v6';
 import { Sidebar } from './Sidebar';
 

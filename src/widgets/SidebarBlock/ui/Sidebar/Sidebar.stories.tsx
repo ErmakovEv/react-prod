@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import ThemeDecorator from 'shared/config/DecoratorsStorybook/ThemeDecorator';
 import { Theme } from 'app/providers/theme';
+import { withRouter } from 'storybook-addon-react-router-v6';
 import { Sidebar } from './Sidebar';
 
 const meta = {
@@ -18,6 +19,7 @@ type Story = StoryObj<typeof meta>;
 export const Light: Story = {
   args: {
   },
+  decorators: [withRouter],
 };
 
 export const Dark: Story = {
@@ -27,5 +29,5 @@ export const Dark: Story = {
     <ThemeDecorator theme={Theme.DARK}>
       <Story />
     </ThemeDecorator>
-  )],
+  ), withRouter],
 };

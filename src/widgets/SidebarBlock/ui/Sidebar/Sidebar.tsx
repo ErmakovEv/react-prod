@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/classNames';
 import React, { useState } from 'react';
 import { ThemeSwitch } from 'shared/ui/ThemeSwitch/';
 import { LangSwitcher } from 'shared/ui/LangSwitcher';
-import { Button } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme, ButtonSize } from 'shared/ui/Button/Button';
 import { useTranslation } from 'react-i18next';
 import classes from './Sidebar.module.scss';
 
@@ -24,8 +24,15 @@ export function Sidebar({ className } : SidebarProps) {
       })}
       data-testid="sidebar"
     >
-      <Button data-testid="button-toggle" onClick={onToggle}>
-        {t('Открыть')}
+      <Button
+        data-testid="button-toggle"
+        onClick={onToggle}
+        className={classes.collapsedBtn}
+        themeButton={ButtonTheme.BACKGROUND_INVERTED}
+        isSquare
+        size={ButtonSize.XL}
+      >
+        {collapsed ? '>' : '<'}
       </Button>
       <div className={classes.switchers}>
         <LangSwitcher className={classes.lang} />

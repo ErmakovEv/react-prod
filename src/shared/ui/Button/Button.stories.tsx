@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import ThemeDecorator from 'shared/config/DecoratorsStorybook/ThemeDecorator';
 import { Theme } from 'app/providers/theme';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonSize, ButtonTheme } from './Button';
 
 const meta = {
   title: 'shared/Button',
@@ -25,25 +25,64 @@ export const Primary: Story = {
 export const Clear: Story = {
   args: {
     children: 'Text',
-    themeButton: ThemeButton.CLEAR,
+    themeButton: ButtonTheme.CLEAR,
   },
 
 };
 export const Outline: Story = {
   args: {
     children: 'Text',
-    themeButton: ThemeButton.OUTLINE,
+    themeButton: ButtonTheme.OUTLINE,
   },
 };
 
 export const OutlineDark: Story = {
   args: {
     children: 'Text',
-    themeButton: ThemeButton.OUTLINE,
+    themeButton: ButtonTheme.OUTLINE,
   },
   decorators: [(Story) => (
     <ThemeDecorator theme={Theme.DARK}>
       <Story />
     </ThemeDecorator>
   )],
+};
+
+export const Background: Story = {
+  args: {
+    children: 'Text',
+    themeButton: ButtonTheme.BACKGROUND,
+  },
+};
+export const BackgroundInverted: Story = {
+  args: {
+    children: 'Text',
+    themeButton: ButtonTheme.BACKGROUND_INVERTED,
+  },
+};
+
+export const SquareSizeM: Story = {
+  args: {
+    children: '>',
+    themeButton: ButtonTheme.BACKGROUND_INVERTED,
+    isSquare: true,
+    size: ButtonSize.M,
+  },
+};
+export const SquareSizeL: Story = {
+  args: {
+    children: '>',
+    themeButton: ButtonTheme.BACKGROUND_INVERTED,
+    isSquare: true,
+    size: ButtonSize.L,
+  },
+};
+
+export const SquareSizeXL: Story = {
+  args: {
+    children: '>',
+    themeButton: ButtonTheme.BACKGROUND_INVERTED,
+    isSquare: true,
+    size: ButtonSize.XL,
+  },
 };

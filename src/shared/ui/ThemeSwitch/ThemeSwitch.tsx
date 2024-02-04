@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames';
 import { Theme, useTheme } from 'app/providers/theme';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import LightIcon from 'shared/assets/icon/sun.svg';
 import DarkIcon from 'shared/assets/icon/moon.svg';
 import classes from './ThemeSwitch.module.scss';
@@ -20,7 +20,7 @@ export function ThemeSwitch({ className } : ThemeSwitchProps) {
                 })
 }
       onClick={toggleTheme}
-      themeButton={ThemeButton.CLEAR}
+      themeButton={ButtonTheme.CLEAR}
     >
       {theme === Theme.DARK ? <LightIcon className={classes.icon} />
         : <DarkIcon className={classes.icon} />}

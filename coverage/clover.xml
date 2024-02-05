@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1707079031523" clover="3.2.0">
-  <project timestamp="1707079031523" name="All files">
-    <metrics statements="30" coveredstatements="23" conditionals="16" coveredconditionals="10" methods="16" coveredmethods="12" elements="62" coveredelements="45" complexity="0" loc="30" ncloc="30" packages="8" files="13" classes="13"/>
+<coverage generated="1707166395712" clover="3.2.0">
+  <project timestamp="1707166395712" name="All files">
+    <metrics statements="32" coveredstatements="25" conditionals="18" coveredconditionals="11" methods="17" coveredmethods="13" elements="67" coveredelements="49" complexity="0" loc="32" ncloc="32" packages="9" files="15" classes="15"/>
     <package name="config.jest">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="jestEmptyComponent.tsx" path="/Users/ermakov/JS/projects/Ulbi/config/jest/jestEmptyComponent.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.app.providers.theme">
@@ -37,8 +37,19 @@
         <line num="17" count="3" type="stmt"/>
       </file>
     </package>
+    <package name="src.shared.config.i18n">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="i18n.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/config/i18n/i18n.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.shared.lib">
-      <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="RenderWithRouter.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/lib/RenderWithRouter.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
       <file name="classNames.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/lib/classNames.ts">
         <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="10" count="29" type="cond" truecount="2" falsecount="0"/>
@@ -62,13 +73,13 @@
       </file>
     </package>
     <package name="src.shared.ui.LangSwitcher">
-      <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="1"/>
       <file name="LangSwitcher.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/LangSwitcher/LangSwitcher.tsx">
-        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="11" count="3" type="stmt"/>
+        <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="13" count="3" type="stmt"/>
-        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="17" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="3" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/LangSwitcher/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -89,10 +100,10 @@
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="Sidebar.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/widgets/SidebarBlock/ui/Sidebar/Sidebar.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="16" count="3" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
       </file>
     </package>
   </project>

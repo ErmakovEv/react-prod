@@ -1,15 +1,15 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { ComponentRender } from 'shared/lib/RenderWithRouter';
 import { Sidebar } from './Sidebar';
 
 describe('Sidebar', () => {
   test('test render', () => {
-    render(<MemoryRouter><Sidebar /></MemoryRouter>);
+    render(<ComponentRender><Sidebar /></ComponentRender>);
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
   });
 
   test('test toggle', () => {
-    render(<MemoryRouter><Sidebar /></MemoryRouter>);
+    render(<ComponentRender><Sidebar /></ComponentRender>);
     const toggleBtn = screen.getByTestId('button-toggle');
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     fireEvent.click(toggleBtn);

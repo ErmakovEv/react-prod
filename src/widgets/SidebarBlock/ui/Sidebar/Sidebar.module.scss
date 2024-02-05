@@ -14,14 +14,6 @@
   width: 100%;
 }
 
-.collapsed {
-  width: 120px;
-
-  .switchers {
-    flex-direction: column;
-  }
-}
-
 .lang {
   margin: 20px;
 }
@@ -35,11 +27,40 @@
 
 .items {
   margin-top: 20px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.link {
+.item {
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.iconPage {
+  fill: var(--inverted-primary-color);
+}
+
+.link {
   margin-left: 30px;
+  opacity: 1;
+}
+
+.collapsed {
+  width: 120px;
+
+  .switchers {
+    flex-direction: column;
+  }
+
+  .link {
+    opacity: 0;
+    transition: 0.2s opacity;
+    width: 0;
+  }
+
+  .item {
+    justify-content: center;
+  }
 }

@@ -16,10 +16,9 @@
     "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "test:ui:ok": "npx loki approve",
     "test:ui:update": "npx loki update",
-
-    "test:ui:ci": "build-storybook && loki --requireReference --reactUri file:./storybook-static",
+    "test:ui:ci": "npm run storybook:build && loki --requireReference --reactUri file:./storybook-static",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "storybook:build": "build-storybook -s public --quiet"
+    "storybook:build": "storybook build -c ./config/storybook"
   },
   "keywords": [],
   "author": "",

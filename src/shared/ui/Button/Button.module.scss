@@ -4,13 +4,13 @@
 
 .clear {
   padding: 0;
+  margin: 2px;
   border: none;
   background: var(--inverted-bg-color);
   outline: none;
 }
 
 .outline {
-  font: var(--font-l);
   padding: 10px 16px;
   font-size: 25px;
   border: 15px solid var(--inverted-primary-color);
@@ -48,5 +48,17 @@
 .square.size_xl {
   width: var(--font-line-xl);
   height: var(--font-line-xl);
+  font-size: var(--font-size-xl);
+}
+
+.size_m {
+  font-size: var(--font-size-m);
+}
+
+.size_l {
+  font-size: var(--font-size-l);
+}
+
+.size_xl {
   font-size: var(--font-size-xl);
 }

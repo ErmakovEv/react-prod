@@ -39,7 +39,7 @@
     </package>
     <package name="src.shared.config.i18n">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="i18n.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/config/i18n/i18n.ts">
+      <file name="i18nForTests.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/config/i18n/i18nForTests.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="1" type="stmt"/>
       </file>

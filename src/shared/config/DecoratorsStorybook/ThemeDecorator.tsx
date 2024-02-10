@@ -10,7 +10,7 @@ interface TestDecoratorProps {
 }
 function ThemeDecorator({ children, theme } : TestDecoratorProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider initialTheme={theme}>
       <div className={`app ${theme}`}>
         {children}
       </div>

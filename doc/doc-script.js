@@ -4,7 +4,7 @@
 // of the folder tree. The idea of this script file is to be minimal and standalone. So
 // that means no jQuery.
 
-// Use localStorage to store data about the tree's state: whether or not
+// Use localStorage to storeProvider data about the tree's state: whether or not
 // the tree is visible and which directories are expanded. Unless the state
 var sidebarVisible = (window.localStorage && window.localStorage.docker_showSidebar) ?
                         window.localStorage.docker_showSidebar == 'yes' :
@@ -109,7 +109,7 @@ function nodeHtml(nodename, node, path, root) {
     for (var i in node.dirs) {
       if (node.dirs.hasOwnProperty(i)) dirs.push({ name: i, html: nodeHtml(i, node.dirs[i], path + i + '/', root) });
     }
-    // Have to store them in an array first and then sort them alphabetically here
+    // Have to storeProvider them in an array first and then sort them alphabetically here
     dirs.sort(function(a, b) { return (a.name > b.name) ? 1 : (a.name == b.name) ? 0 : -1; });
 
     for (var k = 0; k < dirs.length; k += 1) out += dirs[k].html;

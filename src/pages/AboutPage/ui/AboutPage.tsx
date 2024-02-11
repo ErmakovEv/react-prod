@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Counter } from 'entities/Counter';
+import React from 'react';
 
 function AboutPage() {
   const { t } = useTranslation('about');
@@ -6,6 +8,7 @@ function AboutPage() {
   return (
     <div>
       {t('О сайте')}
+      <Counter />
     </div>
   );
 }

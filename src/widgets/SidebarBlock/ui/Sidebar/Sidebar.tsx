@@ -4,7 +4,7 @@ import { ThemeSwitch } from 'shared/ui/ThemeSwitch';
 import { LangSwitcher } from 'shared/ui/LangSwitcher';
 import { Button, ButtonTheme, ButtonSize } from 'shared/ui/Button/Button';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
-import { Theme } from 'app/providers/theme';
+import { Theme } from 'app/providers/themeProvider';
 import { classNames } from 'shared/lib/classNames';
 import AboutPageIcon from 'shared/assets/icon/book.svg';
 import MainPageIcon from 'shared/assets/icon/home.svg';

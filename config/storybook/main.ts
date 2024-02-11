@@ -12,7 +12,7 @@ const configSB: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
-    'storybook-addon-react-router-v6',
+    'storybook-addon-react-routerProvider-v6',
   ],
   framework: {
     name: '@storybook/react-webpack5',
@@ -60,6 +60,7 @@ const configSB: StorybookConfig = {
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
+
     config.module.rules.push(buildCssLoaders(true));
 
     return config;

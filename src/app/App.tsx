@@ -1,7 +1,7 @@
 import React from 'react';
-import { AppRouter } from 'app/providers/router';
+import { AppRouter } from 'app/providers/routerProvider';
 import { classNames } from 'shared/lib/classNames';
-import { useTheme } from 'app/providers/theme';
+import { useTheme } from 'app/providers/themeProvider';
 import { BugButton } from 'widgets/BugButton';
 
 function App() {

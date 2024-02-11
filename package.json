@@ -92,6 +92,7 @@
   "dependencies": {
     "@etchteam/storybook-addon-css-variables-theme": "^2.0.6",
     "@loki/target-chrome-docker": "^0.34.0",
+    "@reduxjs/toolkit": "^2.1.0",
     "eslint-config-airbnb": "^19.0.4",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",
@@ -100,6 +101,7 @@
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.12",
     "react-i18next": "^14.0.0",
+    "react-redux": "^9.1.0",
     "react-router-dom": "^6.21.1"
   },
   "loki": {

@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames';
 import { Link, LinkProps } from 'react-router-dom';
-import { Theme } from 'app/providers/theme';
+import { Theme } from 'app/providers/themeProvider';
 import classes from './AppLink.module.scss';
 
 interface AppLinkProps extends LinkProps {

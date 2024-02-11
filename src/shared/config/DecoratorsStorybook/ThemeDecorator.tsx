@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { Theme, ThemeProvider } from 'app/providers/theme';
+import { Theme, ThemeProvider } from 'app/providers/themeProvider';
 
 // import './index.scss';
 

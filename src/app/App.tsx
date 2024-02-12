@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className={classNames({ cls: 'app', additional: [theme] })}>
-
       <BugButton className="clear" />
       <AppRouter />
     </div>

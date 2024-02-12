@@ -29,7 +29,7 @@ module.exports = {
     'i18next',
     'react-hooks',
   ],
-  ignorePatterns: ['node_modules/', 'coverage/'],
+  ignorePatterns: ['node_modules/', 'coverage/', 'json-server'],
   rules: {
     'react/react-in-jsx-scope': 0,
     'import/prefer-default-export': 'off',

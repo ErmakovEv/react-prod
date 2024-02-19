@@ -61,9 +61,9 @@
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.entities.Counter.model.selectors.getCounter">
+    <package name="src.entities.Counter.model.selectors.getUserAuthData">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getCounter.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/Counter/model/selectors/getCounter/getCounter.ts">
+      <file name="getUserAuthData.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/Counter/model/selectors/getUserAuthData/getUserAuthData.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="7" type="stmt"/>
       </file>

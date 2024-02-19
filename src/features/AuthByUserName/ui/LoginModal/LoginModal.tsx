@@ -21,6 +21,5 @@ export function LoginModal({ className, isOpen, onClose } : LoginModalProps) {
     >
       <LoginForm />
     </Modal>
-
   );
 }

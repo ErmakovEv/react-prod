@@ -18,9 +18,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   themeButton?: ButtonTheme,
   isSquare?: boolean,
   size? : ButtonSize,
+  disabled?: boolean
 }
 export function Button({
-  className, themeButton, isSquare, children, size = ButtonSize.L, ...otherProps
+  className, themeButton, isSquare, children, size = ButtonSize.L, disabled, ...otherProps
 } : ButtonProps) {
   return (
     <button
@@ -28,8 +29,10 @@ export function Button({
       className={classNames({
         cls: classes.Button,
         additional: [className, classes[themeButton], classes[size]],
-        mods: { [classes.square]: isSquare },
+        mods: { [classes.square]: isSquare, [classes.disabled]: disabled },
+
       })}
+      disabled={disabled}
       {...otherProps}
     >
       {children}

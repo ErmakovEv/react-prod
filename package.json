@@ -11,14 +11,14 @@
     "lint:ts": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 10 --fix",
     "lint:scss": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config  config/jest/jest.config.ts",
-    "test:ui": "npx loki test",
+    "test:ui": "npx loki test --port 40123",
     "test:ui:report": "npm run test:ui:json && npm run test:ui:html",
     "test:ui:json": "node scripts/generate-visual-json-report.js",
     "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "test:ui:ok": "npx loki approve",
     "test:ui:update": "npx loki update",
     "test:ui:ci": "npx loki --requireReference --reactUri file:storybook-static",
-    "storybook": "storybook dev -p 6006 -c ./config/storybook",
+    "storybook": "storybook dev -p 40123 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook",
     "prepare": "husky install"
   },
@@ -110,7 +110,6 @@
     "react-router-dom": "^6.21.1"
   },
   "loki": {
-    "chromeTolerance": 100,
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.app",

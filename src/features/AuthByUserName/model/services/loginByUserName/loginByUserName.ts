@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { User, userActions } from 'entities/User';
-import i18n from 'shared/config/i18n/i18n';
+// import i18n from 'shared/config/i18n/i18n';
 import { USER_LOCALSTORAGE_KEY } from 'shared/constants/localStorage';
 
 interface LoginByUserNameProps {
@@ -27,7 +27,7 @@ export const loginByUsername = createAsyncThunk<User, LoginByUserNameProps,
 
       return response.data;
     } catch (e) {
-      return thunkAPI.rejectWithValue(i18n.t('Ошибка аторизации'));
+      return thunkAPI.rejectWithValue('error');
     }
   },
 );

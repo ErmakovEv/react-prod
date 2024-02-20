@@ -41,7 +41,7 @@ export const LoginForm = React.memo(({ className } : LoginFormProps) => {
     })}
     >
       <Text title={t('титул формы авторизации')} />
-      {error && <Text content={error} thema={TextThema.ERROR} />}
+      {error && <Text content={t('Ошибка авторизации')} thema={TextThema.ERROR} />}
       <Input
         type="text"
         className={classes.loginInput}

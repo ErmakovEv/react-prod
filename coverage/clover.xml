@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1707677140636" clover="3.2.0">
-  <project timestamp="1707677140636" name="All files">
-    <metrics statements="51" coveredstatements="44" conditionals="22" coveredconditionals="13" methods="26" coveredmethods="22" elements="99" coveredelements="79" complexity="0" loc="51" ncloc="51" packages="17" files="24" classes="24"/>
+<coverage generated="1708460880978" clover="3.2.0">
+  <project timestamp="1708460880978" name="All files">
+    <metrics statements="149" coveredstatements="62" conditionals="55" coveredconditionals="13" methods="60" coveredmethods="23" elements="264" coveredelements="98" complexity="0" loc="149" ncloc="149" packages="33" files="41" classes="41"/>
     <package name="config.jest">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="jestEmptyComponent.tsx" path="/Users/ermakov/JS/projects/Ulbi/config/jest/jestEmptyComponent.tsx">
@@ -11,13 +11,18 @@
       </file>
     </package>
     <package name="src.app.providers.storeProvider">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="hooks.ts" path="/Users/ermakov/JS/projects/Ulbi/src/app/providers/storeProvider/hooks.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
       <file name="index.ts" path="/Users/ermakov/JS/projects/Ulbi/src/app/providers/storeProvider/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="store.ts" path="/Users/ermakov/JS/projects/Ulbi/src/app/providers/storeProvider/store.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="5" type="stmt"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.app.providers.storeProvider.ui">
@@ -32,12 +37,12 @@
       <metrics statements="12" coveredstatements="6" conditionals="6" coveredconditionals="2" methods="4" coveredmethods="1"/>
       <file name="ThemeContext.ts" path="/Users/ermakov/JS/projects/Ulbi/src/app/providers/themeProvider/ThemeContext.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
       <file name="ThemeProvider.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/app/providers/themeProvider/ThemeProvider.tsx">
         <metrics statements="4" coveredstatements="1" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="0"/>
-        <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="15" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
@@ -61,18 +66,18 @@
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="src.entities.Counter.model.selectors.getUserAuthData">
+    <package name="src.entities.Counter.model.selectors.getCounter">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="getUserAuthData.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/Counter/model/selectors/getUserAuthData/getUserAuthData.ts">
+      <file name="getCounter.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/Counter/model/selectors/getCounter/getCounter.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="7" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Counter.model.selectors.getCounterValue">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getCounterValue.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/Counter/model/selectors/getCounterValue/getCounterValue.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="4" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
       </file>
     </package>
@@ -80,12 +85,12 @@
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="counterSlice.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/Counter/model/slice/counterSlice.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.entities.Counter.model.types">
@@ -107,11 +112,130 @@
         <line num="15" count="5" type="stmt"/>
       </file>
     </package>
+    <package name="src.entities.User">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/User/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.entities.User.model.selectors.getUserAuthData">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="getUserAuthData.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/User/model/selectors/getUserAuthData/getUserAuthData.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.entities.User.model.slice">
+      <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="userSlice.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/User/model/slice/userSlice.ts">
+        <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.entities.User.model.types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="userSchema.ts" path="/Users/ermakov/JS/projects/Ulbi/src/entities/User/model/types/userSchema.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName.model.selectors.getLoginState">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="getLoginState.ts" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/model/selectors/getLoginState/getLoginState.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName.model.services.loginByUserName">
+      <metrics statements="9" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="loginByUserName.ts" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/model/services/loginByUserName/loginByUserName.ts">
+        <metrics statements="9" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName.model.slice">
+      <metrics statements="12" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+      <file name="loginSlice.ts" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/model/slice/loginSlice.ts">
+        <metrics statements="12" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName.model.types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="loginSchema.ts" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/model/types/loginSchema.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName.ui.LoginForm">
+      <metrics statements="12" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="LoginForm.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/ui/LoginForm/LoginForm.tsx">
+        <metrics statements="12" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.features.AuthByUserName.ui.LoginModal">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="LoginModal.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/features/AuthByUserName/ui/LoginModal/LoginModal.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="src.shared.config.i18n">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="i18nForTests.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/config/i18n/i18nForTests.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.constants">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="localStorage.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/constants/localStorage.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.lib">
@@ -124,7 +248,7 @@
         <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="10" count="39" type="cond" truecount="2" falsecount="0"/>
         <line num="11" count="39" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="39" type="stmt"/>
+        <line num="13" count="47" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.ui.AppLink">
@@ -139,7 +263,32 @@
       <metrics statements="1" coveredstatements="1" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="Button.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/Button/Button.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="25" count="21" type="stmt"/>
+        <line num="26" count="21" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.Input">
+      <metrics statements="19" coveredstatements="1" conditionals="9" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="Input.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/Input/Input.tsx">
+        <metrics statements="19" coveredstatements="1" conditionals="9" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.ui.LangSwitcher">
@@ -153,6 +302,54 @@
       </file>
       <file name="index.ts" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/LangSwitcher/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.Modal">
+      <metrics statements="28" coveredstatements="1" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <file name="Modal.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/Modal/Modal.tsx">
+        <metrics statements="28" coveredstatements="1" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.Portal">
+      <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Portal.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/Portal/Portal.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.ui.Text">
+      <metrics statements="1" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Text.tsx" path="/Users/ermakov/JS/projects/Ulbi/src/shared/ui/Text/Text.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="18" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.ui.ThemeSwitch">

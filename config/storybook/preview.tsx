@@ -1,14 +1,10 @@
 import type { Preview } from '@storybook/react';
 import ThemeDecorator from 'shared/config/DecoratorsStorybook/ThemeDecorator';
 import { Theme } from 'app/providers/themeProvider';
-import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
-import { counterReducer } from 'entities/Counter';
+import { StoreProvider } from 'app/providers/storeProvider';
 import { StateSchema } from 'app/providers/storeProvider/StateSchema';
-import { userReducer } from 'entities/User';
-import { loginReducer } from 'features/AuthByUserName/model/slice/loginSlice';
 
-const initialState = {
+const initialState: Partial<StateSchema> = {
   counter: {
     value: 10,
   },
@@ -19,11 +15,6 @@ const initialState = {
     isLoading: false,
   },
 };
-
-const store = configureStore<StateSchema>({
-  reducer: { counter: counterReducer, user: userReducer, loginForm: loginReducer },
-  preloadedState: initialState,
-});
 
 const preview: Preview = {
   parameters: {
@@ -37,12 +28,11 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <Provider store={store}>
+      <StoreProvider initialState={initialState as StateSchema}>
         <ThemeDecorator theme={Theme.LIGHT}>
           <Story />
         </ThemeDecorator>
-      </Provider>
-
+      </StoreProvider>
     ),
   ],
 };

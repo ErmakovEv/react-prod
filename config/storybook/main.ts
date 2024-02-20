@@ -2,6 +2,7 @@ import type { StorybookConfig } from '@storybook/react-webpack5';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { RuleSetRule } from 'webpack';
 import path from 'path';
+import webpack from 'webpack';
 import { buildCssLoaders } from '../build/loaders/buildCssLoaders';
 import { BuildPaths } from '../build/types/config';
 
@@ -62,6 +63,9 @@ const configSB: StorybookConfig = {
     });
 
     config.module.rules.push(buildCssLoaders(true));
+    config.plugins.push(new webpack.DefinePlugin({
+      DEV: JSON.stringify(true),
+    }));
 
     return config;
   },

@@ -12,6 +12,10 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
     openAnalyzer: false,
   }) : undefined;
 
+  // const bundleAnalyzerPlugin = new BundleAnalyzerPlugin({
+  //   openAnalyzer: false,
+  // });
+
   return [
     new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
       template: paths.html,

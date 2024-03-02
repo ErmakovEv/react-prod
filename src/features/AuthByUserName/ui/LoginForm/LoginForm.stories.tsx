@@ -1,7 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { StoreProvider } from 'app/providers/storeProvider';
 import { StateSchema } from 'app/providers/storeProvider/StateSchema';
-import { LoginForm } from './LoginForm';
+import { ReducersMapObject } from '@reduxjs/toolkit';
+import { loginReducer } from 'features/AuthByUserName/model/slice/loginSlice';
+import LoginForm from './LoginForm';
+
+const defaultAsyncReducer: Partial<ReducersMapObject<StateSchema>> = {
+  loginForm: loginReducer,
+};
 
 const meta = {
   title: 'features/LoginForm',
@@ -22,13 +28,15 @@ export const Load: Story = {
   args: {
   },
   decorators: [(Story) => (
-    <StoreProvider initialState={{
-      loginForm: {
-        username: 'test',
-        password: 'test',
-        isLoading: true,
-      },
-    } as StateSchema}
+    <StoreProvider
+      initialState={{
+        loginForm: {
+          username: 'test',
+          password: 'test',
+          isLoading: true,
+        },
+      } as StateSchema}
+      asyncReducers={defaultAsyncReducer}
     >
       <Story />
     </StoreProvider>
@@ -39,13 +47,15 @@ export const Error: Story = {
   args: {
   },
   decorators: [(Story) => (
-    <StoreProvider initialState={{
-      loginForm: {
-        username: 'test',
-        password: 'test',
-        error: 'Error',
-      },
-    } as StateSchema}
+    <StoreProvider
+      initialState={{
+        loginForm: {
+          username: 'test',
+          password: 'test',
+          error: 'Error',
+        },
+      } as StateSchema}
+      asyncReducers={defaultAsyncReducer}
     >
       <Story />
     </StoreProvider>

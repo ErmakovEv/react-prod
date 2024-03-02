@@ -1,16 +1,29 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
-import { loginReducer } from 'features/AuthByUserName';
+import { createReducerManager } from 'app/providers/storeProvider/reducerManager';
 import { StateSchema } from './StateSchema';
 
-export function createReduxStore(initialState?: StateSchema) {
-  return configureStore<StateSchema>({
-    reducer: { counter: counterReducer, user: userReducer, loginForm: loginReducer },
+export function createReduxStore(
+  initialState?: StateSchema,
+  asyncReducer?:ReducersMapObject<StateSchema>,
+) {
+  const rootReducer: ReducersMapObject<StateSchema> = {
+    ...asyncReducer,
+    counter: counterReducer,
+    user: userReducer,
+  };
+
+  const reducerManager = createReducerManager(rootReducer);
+
+  const store = configureStore<StateSchema>({
+    reducer: reducerManager.reduce,
     devTools: DEV,
     preloadedState: initialState,
   });
-}
 
-const store = createReduxStore();
-export type AppDispatch = typeof store.dispatch;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
+  store.reducerManager = reducerManager;
+  return store;
+}
